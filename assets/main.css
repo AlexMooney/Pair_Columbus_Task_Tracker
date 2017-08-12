@@ -175,7 +175,7 @@ button {
 }
 
 footer {
-  margin-top: 15rem
+  margin-top: 10rem
 }
 
 footer .footer-inner p {
@@ -265,7 +265,8 @@ small,
 ul li,
 ol li,
 dl li {
-  list-style: none
+  list-style: none;
+  margin: 2px
 }
 
 ul {
@@ -273,7 +274,6 @@ ul {
 }
 
 input {
-  border: none
 }
 
 input[type=checkbox] {
@@ -281,18 +281,19 @@ input[type=checkbox] {
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -o-transform: scale(1.5);
-  padding: 10px;
-  margin: 10px
+  margin-right: 6px
 }
 
 .todo {
-  width: 400px
+  width: 400px;
+  border: none;
+  padding-left: 3.6px
 }
 
 .delete {
   border: none;
   background: none;
-  font-size: 15pt;
+  font-size: 13pt;
   padding: 0
 }
 
@@ -301,5 +302,6 @@ input[type=checkbox] {
 }
 
 .newTask {
-  border: 1px black solid
+  width: 400px;
+  margin-left: 22.667px
 }

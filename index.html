@@ -8,7 +8,7 @@
 
     <title>Raymond &amp; Alex's Task Tracker</title>
 
-    <link rel="stylesheet" href="assets/main.css"><link rel="stylesheet" href="assets/css.css" media="all">
+    <link rel="stylesheet" href="assets/main.css">
   </head>
   <body>
     <header>
@@ -16,16 +16,19 @@
         <h2>Raymond &amp; Alex's Task Tracker</h2>
       </div>
     </header>
+
     <div id="app">
       <div class="main-inner index">
         <div id="root">
-          <input type="text" style="margin-top: 20px" v-model="newTodo" @keyup.enter="addTodo">
           <h4>Tasks</h4>
           <ul>
             <li v-for="todo in todos">
               <input type="checkbox" v-model="todo.completed">
-              <input type="text" style="border: none" v-model="todo.text" v-bind:class="['todo', { 'done' : todo.completed }]">
+              <input type="text" v-model="todo.text" v-bind:class="['todo', { 'done' : todo.completed }]">
               <button class="delete" @click="removeTodo(todo)">&#10005;</button>
+            </li>
+            <li>
+              <input type="text" class="newTask" v-model="newTodo" @keyup.enter="addTodo">
             </li>
           </ul>
           <button style="margin-top: 20px" @click="removeCompleted">Remove Completed Tasks</button>

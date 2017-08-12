@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="wf-alegreya-n4-active wf-alegreya-n7-active wf-alegreya-i4-active wf-alegreya-n9-active wf-active"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Raymond &amp; Alex's Task Tracker</title>
+
+    <link rel="stylesheet" href="Raymond%20&amp;%20Alex%27s%20Task%20Tracker_files/main.css"><link rel="stylesheet" href="Raymond%20&amp;%20Alex%27s%20Task%20Tracker_files/css.css" media="all">
+  </head>
+  <body>
+
+    <div class="gridly-wrap">
+      <div class="gridly">
+        <div class="column one"></div>
+        <div class="column two"></div>
+        <div class="column three"></div>
+        <div class="column four"></div>
+        <div class="column five"></div>
+        <div class="column six"></div>
+        <div class="column seven"></div>
+        <div class="column eight"></div>
+        <div class="column nine"></div>
+        <div class="column ten"></div>
+        <div class="column eleven"></div>
+        <div class="column twelve"></div>
+        <div class="column thirteen"></div>
+        <div class="column fourteen"></div>
+        <div class="column fifteen"></div>
+        <div class="column sixteen"></div>
+      </div>
+    </div>
+    <header>
+      <div class="header-inner">
+        <h2>Raymond &amp; Alex's Task Tracker</h2>
+      </div>
+    </header>
+    <div id="app">
+      <div class="main-inner index">
+        <div id="root">
+          <input type="text" style="margin-top: 20px" v-model="newTodo" @keyup.enter="addTodo">
+          <h4>Tasks</h4>
+          <ul>
+            <li v-for="todo in todos">
+              <input type="checkbox" v-model="todo.completed">
+              <input type="text" style="border: none" v-model="todo.text" v-bind:class="['todo', { 'done' : todo.completed }]">
+              <button class="delete" @click="removeTodo(todo)">&#10005;</button>
+            </li>
+          </ul>
+          <button style="margin-top: 20px" @click="removeCompleted">Remove Completed Tasks</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-inner">
+        <p>Made at Pair Columbus</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="Raymond%20&amp;%20Alex%27s%20Task%20Tracker_files/app.js"></script>
+  </body></html>

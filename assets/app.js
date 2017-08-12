@@ -1,10 +1,12 @@
 function todoStorage() {
+  var defaultTasks = '[{"text": "Add some tasks", "completed": false}]'
+  var storageAddress = 'todoStorage'
   return {
     fetch: function() {
-      return JSON.parse(localStorage.getItem('todoStorage') || '[]')
+      return JSON.parse(localStorage.getItem(storageAddress) || defaultTasks)
     },
     save: function(todos) {
-      localStorage.setItem('todoStorage', JSON.stringify(todos))
+      localStorage.setItem(storageAddress, JSON.stringify(todos))
     }
   }
 }

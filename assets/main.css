@@ -1,0 +1,307 @@
+body {
+  position: relative;
+  margin: 0
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+div {
+  display: block;
+  width: 100%
+}
+
+.footer-inner,
+.main-inner,
+.header-inner,
+.gridly-wrap {
+  width: 264px;
+  margin: auto
+}
+
+@media screen and (min-width: 370px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 336px
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 408px
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 552px
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 696px
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 840px
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 984px
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .footer-inner,
+  .main-inner,
+  .header-inner,
+  .gridly-wrap {
+    width: 1128px
+  }
+}
+
+header {
+  padding: 1rem;
+  background-color: #2FB06D
+}
+
+header h1 {
+  text-align: center;
+  color: #28374D
+}
+
+.benefits {
+  width: 264px;
+  margin: auto
+}
+
+@media screen and (min-width: 600px) {
+  .benefits {
+    float: left;
+    margin-right: 24px
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .benefits {
+    width: 336px
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .benefits {
+    width: 408px
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits {
+    width: 480px
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .benefits {
+    width: 552px
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .copy .benefits:last-of-type {
+    margin-right: 0
+  }
+}
+
+.main,
+.bennies {
+  *zoom: 1
+}
+
+.main:before,
+.main:after,
+.bennies:before,
+.bennies:after {
+  content: " ";
+  display: table
+}
+
+.main:after,
+.bennies:after {
+  clear: both
+}
+
+input,
+button {
+  font-size: 1rem;
+  font-family: 'Alegreya', 'Georgia', serif
+}
+
+input {
+  padding-left: .1rem
+}
+
+button {
+  padding: .1rem
+}
+
+footer {
+  margin-top: 10rem
+}
+
+footer .footer-inner p {
+  text-align: center
+}
+
+.environment {
+  text-align: center;
+  margin-top: 5rem
+}
+
+html {
+  font-size: 14px
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 20px
+  }
+}
+
+html.wf-loading {
+  opacity: 0
+}
+
+html.wf-active {
+  opacity: 1;
+  display: block;
+  font-family: 'Alegreya', 'Georgia', serif
+}
+
+html.wf-inactive,
+html.wf-fontinactive {
+  opacity: 1;
+  display: block;
+  font-family: 'Georgia', serif
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.45;
+  color: 900;
+  font-size: 1rem
+}
+
+p {
+  margin-bottom: 1.3rem
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414Rem 0 0.5rem;
+  font-weight: inherit;
+  line-height: 1.2
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 5.063rem
+}
+
+h2 {
+  font-size: 3.375rem
+}
+
+h3 {
+  font-size: 2.25rem
+}
+
+h4 {
+  font-size: 1.5rem
+}
+
+small,
+.font_small {
+  font-size: 0.667rem
+}
+
+ul li,
+ol li,
+dl li {
+  list-style: none;
+  margin: 2px
+}
+
+ul {
+  margin-left: 0
+}
+
+input {
+}
+
+input[type=checkbox] {
+  -ms-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  margin-right: 6px
+}
+
+.todo {
+  width: 400px;
+  border: none;
+  padding-left: 3.6px
+}
+
+.delete {
+  border: none;
+  background: none;
+  font-size: 13pt;
+  padding: 0
+}
+
+.done {
+  text-decoration: line-through
+}
+
+.newTask {
+  width: 400px;
+  margin-left: 22.667px
+}
